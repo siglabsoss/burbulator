@@ -1,0 +1,42 @@
+{
+    "top": "tb_higgs_top",
+    "reset": "MIB_MASTER_RESET",
+    "clk": "clk",
+    "targets": [
+        {
+            "data":  "i_data_eth",
+            "ready": "o_i_ready_eth",
+            "valid": "i_data_valid_eth",
+            "input_file": "input_0",
+            "width": 32
+            
+
+        },
+        
+        {
+            "data":  "i_data_adc",
+            "ready": "o_i_ready_adc",
+            "valid": "i_data_valid_adc",
+            "input_file": "input_1",
+            "width": 32
+            
+        }
+    ],
+    "initiators": [
+        {
+            "data":  "o_data_dac",
+            "ready": "i_o_ready_dac",
+            "valid": "o_data_valid_dac",
+            "output_file": "output_0",
+            "width": 32
+        },
+        {
+            "data":  "o_data_eth",
+            "ready": "i_o_ready_eth",
+            "valid": "o_data_valid_eth",
+            "output_file": "output_1",
+            "width": 32
+            
+        }
+    ]
+}
